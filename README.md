@@ -32,7 +32,7 @@
    * **Icon (Expression)** `string:play circular orange large` See [Semantic UI Icon](https://react.semantic-ui.com/elements/icon/) for more icons variations. Aditionally you can provide:
      * `no-title` - to hide the action title
      * `no-icon` - to hide the action icon
-   * **Condition** `python:'/en' in plone_context_state.object_url()` See [ContextState](https://github.com/plone/plone.app.layout/blob/master/plone/app/layout/globals/context.py#L31) available methods
+   * **Condition** `python:'/help' not in plone_context_state.object_url()` See [ContextState](https://github.com/plone/plone.app.layout/blob/master/plone/app/layout/globals/context.py#L31) available methods
    * **Permissions** `Modify portal content`
 
 ### Try volto-toolbar-actions with Docker
