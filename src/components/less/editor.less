@@ -1,8 +1,13 @@
-.volto-toolbar-actions {
-  text-align: center;
+.toolbar-top-actions,
+.toolbar-bottom-actions {
+  overflow: hidden;
+  max-width: 100%;
 
   a {
-    margin-bottom: 20px;
+    display: grid !important;
+    grid-gap: 0.5em;
+    justify-items: center;
+    text-align: center;
   }
 
   span {
