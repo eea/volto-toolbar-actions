@@ -15,13 +15,25 @@
 [![Duplicated Lines (%)](https://sonarqube.eea.europa.eu/api/project_badges/measure?project=volto-toolbar-actions-develop&metric=duplicated_lines_density)](https://sonarqube.eea.europa.eu/dashboard?id=volto-toolbar-actions-develop)
 
 
-[Volto](https://github.com/plone/volto) add-on
+[Volto](https://github.com/plone/volto) Toolbar extra actions for **Site Administrators**
 
 ## Features
 
-Demo GIF
+![Toolbar Actions](https://github.com/eea/volto-toolbar-actions/raw/develop/docs/toolbar-actions.png)
 
 ## Getting started
+
+1. Go to [ZMI > portal_actions](http://localhost:8080/Plone/portal_actions/manage_main)
+1. Add a new **CMF Action Category** called **toolbar_top_actions** or **toolbar_bottom_actions**
+1. Within this category add a new **CMF Action** called **help**
+1. Edit **help**
+   * **Title:** `Help`
+   * **URL (Expression):** `string:${portal_url}/help`
+   * **Icon (Expression)** `string:play circular orange large` See [Semantic UI Icon](https://react.semantic-ui.com/elements/icon/) for more icons variations. Aditionally you can provide:
+     * `no-title` - to hide the action title
+     * `no-icon` - to hide the action icon
+   * **Condition** `python:'/help' not in plone_context_state.object_url()` See [ContextState](https://github.com/plone/plone.app.layout/blob/master/plone/app/layout/globals/context.py#L31) available methods
+   * **Permissions** `Modify portal content`
 
 ### Try volto-toolbar-actions with Docker
 
