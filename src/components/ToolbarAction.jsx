@@ -9,7 +9,7 @@ const ToolbarAction = (props) => {
   const hasTitle = !item?.icon?.includes('no-title');
   return (
     <UniversalLink href={item.url} title={item.title}>
-      {hasIcon ? <Icon name={item.icon} alt={item.title} /> : ''}
+      {hasIcon ? <Icon className={item.icon} alt={item.title} /> : ''}
       {hasTitle ? <span>{item.title}</span> : ''}
     </UniversalLink>
   );
