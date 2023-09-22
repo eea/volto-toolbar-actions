@@ -1,9 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { useSelector } from 'react-redux';
-import { Icon } from 'semantic-ui-react';
-import { UniversalLink } from '@plone/volto/components';
 import { Plug } from '@plone/volto/components/manage/Pluggable';
+import { default as ToolbarAction } from './ToolbarAction';
 import './less/editor.less';
 
 const ToolbarTopActions = (props) => {
@@ -21,16 +20,9 @@ const ToolbarTopActions = (props) => {
         dependencies={actions}
       >
         <div className="toolbar-top-actions" id="toolbar-top-actions">
-          {actions.map((item) => {
-            const hasIcon = !item?.icon?.includes('no-icon');
-            const hasTitle = !item?.icon?.includes('no-title');
-            return (
-              <UniversalLink href={item.url} title={item.title}>
-                {hasIcon ? <Icon name={item.icon} alt={item.title} /> : ''}
-                {hasTitle ? <span>{item.title}</span> : ''}
-              </UniversalLink>
-            );
-          })}
+          {actions.map((item) => (
+            <ToolbarAction key={item.id} item={item} />
+          ))}
         </div>
       </Plug>
     </>
