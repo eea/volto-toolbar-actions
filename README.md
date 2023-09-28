@@ -19,7 +19,11 @@
 
 ## Features
 
-![Toolbar Actions](https://github.com/eea/volto-toolbar-actions/raw/develop/docs/toolbar-actions.png)
+![Toolbar Actions](https://github.com/eea/volto-toolbar-actions/raw/master/docs/toolbar-actions.png)
+
+### Demo - How to add a toolbar action via ZMI
+
+![Toolbar Actions](https://github.com/eea/volto-toolbar-actions/raw/master/docs/toolbar-actions.gif)
 
 ## Getting started
 
