@@ -25,8 +25,6 @@
 
 ![Toolbar Actions](https://github.com/eea/volto-toolbar-actions/raw/master/docs/toolbar-actions.gif)
 
-## Getting started
-
 1. Go to [ZMI > portal_actions](http://localhost:8080/Plone/portal_actions/manage_main)
 1. Add a new **CMF Action Category** called **toolbar_top_actions** or **toolbar_bottom_actions**
 1. Within this category add a new **CMF Action** called **help**
@@ -38,6 +36,9 @@
      * `no-icon` - to hide the action icon
    * **Condition** `python:'/help' not in plone_context_state.object_url()` See [ContextState](https://github.com/plone/plone.app.layout/blob/master/plone/app/layout/globals/context.py#L31) available methods
    * **Permissions** `Modify portal content`
+
+
+## Getting started
 
 ### Try volto-toolbar-actions with Docker
 
