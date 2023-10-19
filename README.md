@@ -19,11 +19,11 @@
 
 ## Features
 
-![Toolbar Actions](https://github.com/eea/volto-toolbar-actions/raw/master/docs/toolbar-actions.png)
+![Toolbar Actions](https://raw.githubusercontent.com/eea/volto-toolbar-actions/master/docs/toolbar-actions.png)
 
 ### Demo - How to add a toolbar action via ZMI
 
-![Toolbar Actions](https://github.com/eea/volto-toolbar-actions/raw/master/docs/toolbar-actions.gif)
+![Toolbar Actions](https://raw.githubusercontent.com/eea/volto-toolbar-actions/master/docs/toolbar-actions.gif)
 
 1. Go to [ZMI > portal_actions](http://localhost:8080/Plone/portal_actions/manage_main)
 1. Add a new **CMF Action Category** called **toolbar_top_actions** or **toolbar_bottom_actions**
