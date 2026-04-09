@@ -5,10 +5,12 @@ import { Plug } from '@plone/volto/components/manage/Pluggable';
 import { default as ToolbarAction } from './ToolbarAction';
 import './less/editor.less';
 
+const EMPTY_ACTIONS = Object.freeze([]);
+
 const ToolbarBottomActions = (props) => {
   const { token } = props;
   const actions = useSelector(
-    (state) => state?.actions?.actions?.toolbar_bottom_actions || [],
+    (state) => state?.actions?.actions?.toolbar_bottom_actions ?? EMPTY_ACTIONS,
   );
   // isAuth AND toolbar_top_actions is present in portal_actions
   return !!token && actions?.length ? (
