@@ -1,6 +1,7 @@
 {
   "name": "@eeacms/volto-toolbar-actions-dev",
-  "version": "1.0.0-alpha.0",
+  "private": true,
+  "version": "4.0.0",
   "description": "@eeacms/volto-toolbar-actions: Volto add-on",
   "author": "European Environment Agency: IDM2 A-Team",
   "homepage": "https://github.com/eea/volto-toolbar-actions",
