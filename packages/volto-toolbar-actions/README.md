@@ -26,6 +26,20 @@
    * **Condition** `python:'/help' not in plone_context_state.object_url()` See [ContextState](https://github.com/plone/plone.app.layout/blob/master/plone/app/layout/globals/context.py#L31) available methods
    * **Permissions** `Modify portal content`
 
+## Upgrade
+
+### Upgrading to 4.x
+
+> This version requires `Volto 18` or `Volto 19` and Node.js 22.
+
+The add-on keeps the same API, so upgrading from 3.x on Volto 18 needs no code changes. The release adds Volto 19 support and moves the repository to the Volto 19 layout, where the published package lives in `packages/volto-toolbar-actions`.
+
+#### Breaking changes
+
+- **Node.js 22 or newer is required** (`engines.node >= 22`), 3.x declared no engine.
+- **React 18 is required.** The package declares `react` and `react-dom` as `^18.2.0` peers, 3.x declared no peers.
+- **The package no longer ships the Jest setup.** `jest-addon.config.js` and `jest.setup.js` were removed in favour of Vitest, so a Volto 18 project that still runs the Jest harness has to keep its own copy.
+
 ## Requirements
 
 ### Backend
